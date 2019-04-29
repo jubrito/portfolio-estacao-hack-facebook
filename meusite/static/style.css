@@ -1,0 +1,452 @@
+/* DEIXAR TORTINHO: https://codepen.io/matthewsmith_io/pen/rGJdwa
+INSPIRA��O: https://elissonkario.com.br/ */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin:0;
+    display:grid;
+    grid-template-areas: 'header header header'
+    'graduacao graduacao graduacao'
+    'habilidades habilidades habilidades'
+    'front front front'
+    'uxui uxui uxui'
+    'lab lab lab'
+    'footer footer footer';
+    grid-template-rows: 85vh /*header*/
+                        90vh /*graduacao*/
+                        60vh /*habilidades*/
+                        130vh /*front*/
+                        90vh /*uxui*/
+                        100vh /*lab*/
+                        30vh /*footer*/;
+    font-size: 18px;
+}
+
+ul{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h5{
+    color:white;
+    overflow-wrap: break-word;
+    font-size: 55px;
+    margin: 0px;
+}
+
+h4{
+    color:purple;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+}
+
+h6{
+    color: white;
+    font-size:38px;
+    padding:0px;
+    margin:2px;
+    text-decoration: underline;
+}
+
+header {
+    grid-area: header;
+    background-color:black;
+}
+
+header p {
+    color:white;
+    width:300px;
+    font-size:30px;
+}
+
+
+.graduacao{
+    grid-area: graduacao;
+    border-top: 20px solid white;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-evenly;
+    background-color:black;
+}
+
+.graduacao p {
+    color:white;
+    width:100%;
+    padding:0px;
+    margin:0;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+
+.habilidades{
+    grid-area: habilidades;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hab_titulo{
+    justify-content: center;
+    align-items: center;
+}
+
+.front{
+    grid-area: front;
+    background-color: #8A084B;
+}
+
+.uxui {
+    grid-area: uxui;
+    background-color:black;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.lab {
+    grid-area: lab;
+    background-color:crimson;
+    z-index: 1001;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+.cabecalho {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+
+.subtitulo{
+    font-size:30px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.academico{
+    width:90%;
+    height: 100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont_acad{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.solucoes{
+    width:80%;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solucoes p{
+    margin-top:-15px;
+    width:60%;
+    opacity:0.6;
+}
+
+.itens{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subtitulo{
+    width: 100%;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height:90%;
+    margin-top:50px;
+}
+
+.texto_portfolio{
+    width: 90%;
+    height: 20px;
+    padding:10px;
+    margin-top:-30px;
+    background-color: black;
+    color: white;
+}
+
+.cont_port{
+    display: flex;
+    margin-left:80px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.computador{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.base1{
+    background-color:black;
+    width:200px;
+    height:50px;
+}
+.base2{
+    background-color:black;
+    width:300px;
+    height:15px;
+}
+
+.botoes_front{
+    margin-top:30px;
+}
+
+.proximo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    background-color: black;
+    background-color: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proximo p{
+    
+}
+
+.proximo:hover{
+    background-color: white;
+    color: black;
+}
+
+.descri_design{
+    width:50%;
+    height:100%;
+    background-color: black;
+    z-index: 1000;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descri_design p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.colecao_design{
+    width:50%;
+    height:100%;
+    background-color: blue;
+}
+
+.pop_up{
+    background-color: black;
+    color: white;
+    width:300px;
+    height:50px;
+}
+
+.arte{
+    width: 90%;
+}
+
+.artes{
+    width: 500px;
+    transform: translateX(-50vw);
+    margin-top: 50px;
+}
+
+.aparecerPopUp{
+    transform: translateX(5vw);
+    transition: 8s;
+}
+
+.menu_hamburguer{
+    width:200px;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traco{
+    width: 100px;
+    height: 10%;
+    background-color: white;
+    color:white;
+    margin: 10px;
+}
+
+.sumir_menu_hamburguer{
+    display: none;
+    transition: 10s;
+}
+
+.menu_X{
+    margin-top:-40px;
+    width:200px;
+    height: 200px;
+    display: none;
+}
+
+.X{
+    width:200px;
+    height: 200px;
+    margin: 10px;
+    color: white;
+}
+
+.menu_X img{
+    margin-top:70px;
+    width:100px;
+    height: 100px;
+}
+
+.aparecer_menu_x{
+    display: block;
+}
+
+.menu_navegacao{
+    display:block;
+    justify-content:left;
+    margin:8px;
+    width: 100%;
+    background-color:none;
+    opacity:0.0;
+    margin-top: 550px;
+    margin-left: -530px;
+    transition:10s;
+}
+
+.menu_navegacao a{
+    color: black;
+    text-decoration: none;
+}
+
+.aparecerMenuNavegacao{
+    opacity:1.0;
+    background-color: none;
+    display:block;
+    transition: 5s;
+    margin-top: 350px;
+    margin-left: -530px;
+}
+
+.links {
+    margin:8px;
+    width: 30px;
+    height: 50px;
+    background-color: white;
+    color: black;
+}
+
+.fundo_p{
+    color: white;
+    background-color:black;
+}
+
+.img_hamb{
+    width:100%;
+}
+
+.icon_item{
+    width:50px;
+    height:50px;
+}
+
+.img_nome_titulo{   
+    margin-top:50px;
+    padding:15px;
+    margin:20;
+}
+
+.img_header{
+    height: 650px;
+    background-image: url(imagens/header.png);
+    background-size: cover;
+}
+
+.img_front {
+    width: 600px;
+    align-items: center;
+    border: 15px solid black;
+    border-bottom: 40px solid black;
+}
+
+#img_complemento {
+    width:25%;
+    margin-top:10px;
+}
+
+#conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#entrelinhas {
+    font-size:20px;
+    opacity: 0.7;
+}
+@media(max-width:650px){
+    h5{
+        color:white;
+        overflow-wrap: break-word;
+        font-size: 35px;
+    }
+
+    .img_nome_titulo{
+        width:300px;
+        width: 40px;
+    }
+
+    .cabecalho {
+        margin-left:0px;
+    }
+    
+    .menu_navegacao{
+        margin-left: -400px;   
+    }
+
+    .aparecerMenuNavegacao{
+        margin-left: -400px;
+        opacity:1.0;
+    }
+
+}

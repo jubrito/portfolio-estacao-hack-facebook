@@ -1,0 +1,124 @@
+{% extends 'main.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<header>
+    <div class="img_header">
+        <div class="cabecalho">
+            <div id="conteudo">
+                <img src="{% static 'imagens/julianaw.png'%}" class="img_nome_titulo">
+                <h5><small><small>DESENVOLVEDORA</small></small></br>
+                    FRONT-END</br>
+                    UI/UX DESIGN</h5>
+                </div>
+                <div class="menu_hamburguer">
+                    <span class="traco">.</span>
+                    <span class="traco">.</span>
+                    <span class="traco">.</span>
+                </div>
+                <div class="menu_X">
+                    <img src="{% static 'imagens/x.png'%}" class="X">
+                </div>
+                
+                <div class="menu_navegacao">
+                    <a href="" class ="links">link 1</a>
+                    <a href="" class ="links">link 2</a>
+                    <a href="" class ="links">link 3</a>
+                    <a href="" class ="links">link 4</a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </header>
+    
+    <section class="graduacao">
+        <h6><strong>GRADUAÇÃO</strong></h6>
+        <div class="academico">
+            <img src="{% static 'imagens/usp.png'%}" alt="" id="img_complemento">
+            <div class="cont_acad">
+                <h6 class="subtitulo">Universidade de São Paulo (EACH-USP)</h6></small>
+                <p>Computação - Bacharelado em sistemas de informação</br></p>
+                <p id="entrelinhas">Aprovada em 2º lugar; Entre os 10 melhores alunos dentre os ingressantes de 2017 (8º/127); Sem reprovações.</p>
+            </div>
+        </div>
+        <h6><strong>CURSOS COMPLEMENTARES</strong></h6>
+        <div class="academico">
+            <img src="{% static 'imagens/Academia.png'%}" alt="" id="img_complemento">
+            <div class="cont_acad">
+                <h6 class="subtitulo">Academia Mastertech - Projeto em parceria com o facebook</h6>
+                <p>Curso profissionalizante de FRONT-END e BACK-END</br></p>
+                <p id="entrelinhas">HTML, CSS, Git, Github, Lógica de Programação, Javascript, Html e DOM, Back-End, Python, Banco de Dados, MVC e Publicação.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="habilidades">
+        <div class="hab_titulo"><h4>Soluções</h4></div>
+        <div class="solucoes">
+            <div class="itens">
+                <img src="{% static 'imagens/front.svg'%}" alt="" class="icon_item">
+                <h3>DESENVOLVEDORA</br>FRONT END</h3>
+                <p>Desenvolvimento WEB a partir de conhecimentos em HTML, CSS e JavaScript</p>
+            </div>
+            <div class="itens">
+                <img src="{% static 'imagens/ux.svg'%}" alt="" class="icon_item">
+                <h3>UI/UX DESIGN</h3>
+                <p>Manipulação e Criação de imagens a partir de ferramentas de edição (Photoshop)</p>
+            </div>
+            <div class="itens">
+                <img src="{% static 'imagens/wordp.svg'%}" alt="" class="icon_item">
+                <h3>PROGRAMAÇÃfO</h3>
+                <p>Conhecimento avançado em Java e C, Conhecimentos intermediários em Arduino</p>
+            </div>
+        </div>
+    </section>
+    <section class="front">
+        <div class="portfolio">
+            <h2 class="fundo_p">Portfólio FRONT-END</h2>
+            <div class="cont_port">
+                <div class="computador">
+                    <img src="{% static 'imagens/front/capa.png'%}" class="img_front">
+                    <div class="base1">.</div>
+                    <div class="base2">.</div>
+                </div>
+                <p class="proximo"> >> </p>
+            </div>
+            <p class="texto_portfolio">Passe as fotos para ver o portfolio</p>
+        </div>
+    </section>
+    <section class="uxui">
+        <div class="descri_design">
+            <h2>DESIGN UI/UX</h2>
+            <p>Participação em projetos no setor de criação:</p>
+            <ul>
+                <li>Diretório Acadêmico de Sistemas de Informação (DASI-USP)</li>
+                <li>Entidade de Incentivo ao Esporte Universitário da Escola de Artes, Ciências e Humanidades</li>
+            </ul>
+            
+            <p>Quais são as vantagens de investir em UI/UX Design?</p>
+            <ul>
+                <li>Fidelização do Usuário/Cliente</li>
+                <li>Aumento da produtividade do usuário</li>
+                <li>Diminuição dos erros do usuário</li>
+                <li>Diminuição dos gastos com treinamento</li>
+                <li>Economia de dinheiro fazendo alterações mais cedo no ciclo de vida do produto</li>
+                <li>Diminuição dos gastos com suporte a clientes/usuários</li>
+                <li>Aumento das vendas, porque o sistema se torna mais atraente</li>
+            </ul>
+            <button class="pop_up">Visualizar artes desenvolvidas</button>
+        </div>
+        <div class="colecao_design">
+            <div class="artes">
+                <img src="{% static 'imagens/design/1.jpg'%}" class="arte">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="lab">.</section>
+    <footer>.</footer>
+    
+    {% endblock %}
