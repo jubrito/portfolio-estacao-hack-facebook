@@ -14,12 +14,12 @@ body {
     'lab lab lab'
     'footer footer footer';
     grid-template-rows: 85vh /*header*/
-                        90vh /*graduacao*/
-                        60vh /*habilidades*/
-                        130vh /*front*/
-                        90vh /*uxui*/
-                        100vh /*lab*/
-                        30vh /*footer*/;
+    90vh /*graduacao*/
+    60vh /*habilidades*/
+    130vh /*front*/
+    90vh /*uxui*/
+    100vh /*lab*/
+    30vh /*footer*/;
     font-size: 18px;
 }
 
@@ -430,12 +430,12 @@ footer {
         overflow-wrap: break-word;
         font-size: 35px;
     }
-
+    
     .img_nome_titulo{
         width:300px;
         width: 40px;
     }
-
+    
     .cabecalho {
         margin-left:0px;
     }
@@ -443,10 +443,10 @@ footer {
     .menu_navegacao{
         margin-left: -400px;   
     }
-
+    
     .aparecerMenuNavegacao{
         margin-left: -400px;
         opacity:1.0;
     }
-
+    
 }
