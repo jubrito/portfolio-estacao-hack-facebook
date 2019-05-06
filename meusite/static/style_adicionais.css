@@ -1,0 +1,22 @@
+body{
+    background-color: green;
+}
+
+.divisao{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin:80px;
+}
+
+form{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: red;
+}

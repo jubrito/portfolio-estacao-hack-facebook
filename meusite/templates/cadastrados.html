@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'style_adicionais.css' %}">
+<div class="divisao">
+    <div>
+        {% for cadastrado in cadastrados %}
+        <img src="{{ cadastrado.foto.url }}" alt="img_perfil">
+        <h2>{{ cadastrado.nome }}</h2>
+        <p>{{ cadastrado.idade }}</p>
+        {% endfor %}
+    </div>
+</div>
+   
+{% endblock %}

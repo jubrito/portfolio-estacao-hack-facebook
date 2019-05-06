@@ -243,9 +243,6 @@ footer {
     align-items: center;
 }
 
-.proximo p{
-    
-}
 
 .proximo:hover{
     background-color: white;
@@ -344,13 +341,13 @@ footer {
 
 .menu_navegacao{
     display:block;
-    justify-content:left;
+    justify-content:center;
     margin:8px;
     width: 100%;
     background-color:none;
     opacity:0.0;
     margin-top: 550px;
-    margin-left: -530px;
+    margin-left: -460px;
     transition:10s;
 }
 
@@ -365,7 +362,7 @@ footer {
     display:block;
     transition: 5s;
     margin-top: 350px;
-    margin-left: -530px;
+    margin-left: -460px;
 }
 
 .links {
@@ -407,6 +404,13 @@ footer {
     align-items: center;
     border: 15px solid black;
     border-bottom: 40px solid black;
+}
+
+.campo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #img_complemento {

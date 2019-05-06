@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'style_adicionais.css' %}">
+<div class="divisao">
+    <!--~~~~~~~~~~COLOCA O FORMULARIO NO HTML~~~~~~~~~~~-->
+    <!--metodos http://-->
+        <form method='POST'>
+            <!-- EVITA TIPO DE ATAQUE DE SEGURANÇA (que explora a confiança do navegador de um det site, falsifica solicitação entre sites-->
+            {% csrf_token %}
+            {{ form }} <!--CONTEXTO DO FORMULARIO-->
+            
+            <!-- TUDO QUE É DO CONTEXTO VEM ASSIM chavechavecoisa do contexto}}-->
+            <!-- {% (template tag) funções do python -->
+            <button type='submit'>Cadastrar-se</button>
+            {% if msg %}
+            <h2>{{ msg }}</h2>
+            {% endif %}
+        </form>
+</div>
+{% endblock %}

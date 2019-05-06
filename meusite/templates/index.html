@@ -3,7 +3,7 @@
 {% load staticfiles %}
 
 {% block content %}
-
+<link rel="stylesheet" href="{% static 'style.css' %}">
 <header>
     <div class="img_header">
         <div class="cabecalho">
@@ -23,12 +23,13 @@
                 </div>
                 
                 <div class="menu_navegacao">
-                    <a href="" class ="links">link 1</a>
-                    <a href="" class ="links">link 2</a>
-                    <a href="" class ="links">link 3</a>
+                    <a href="/" class ="links">home</a>
+                    <a href="/sobre" class ="links">sobre mim</a>
+                    <a href="https://linkedin.com/in/juwitzke" class ="links">linkedin</a>
                     <a href="" class ="links">link 4</a>
                 </div>
                 
+                <a href="/cadastro">Cadastre-se você também</a>
             </div>
             
         </div>

@@ -1,3 +1,4 @@
 from django.contrib import admin
+from meusite.models import Candidato
 
-# Register your models here.
+admin.site.register(Candidato)
