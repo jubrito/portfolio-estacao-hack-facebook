@@ -6,9 +6,9 @@ let i = 0;
 let botaoProx = document.querySelector(".proximo");
 let botao = document.querySelector(".pop_up");
 let popup = document.querySelector(".artes");
-let imgFront = document.querySelector(".img_front");
+let imgFront = document.querySelector(".img_aulas");
 let imgArte = document.querySelector(".arte");
-let descricaoImgFront = document.querySelector(".texto_portfolio");
+let descricaoImgFront = document.querySelector(".texto_aulas");
 let descricaoArte = document.querySelector(".texto_arte");
 let corpo = document.querySelector("body");
 let menuHamburguer = document.querySelector(".menu_hamburguer");
@@ -17,9 +17,9 @@ let traco = document.querySelector(".traco");
 let menuX = document.querySelector(".menu_X");
 
 let listaFront=[
-    /* 0 */{url:'../static/imagens/front/1.png', tag: "Texto do Site 1"},
-    /* 1 */{url:'../static/imagens/front/2.png', tag: "Texto do Site 2"},
-    /* 2 */{url:'../static/imagens/front/3.png', tag: "Texto do Site 3"}
+    /* 0 */{url:'../static/imagens/front/1.png', tag: "Aula 1 - Criando arquivo com HTML, CSS JS"},
+    /* 1 */{url:'../static/imagens/front/2.png', tag: "Aula 2 - Introdução a Grid "},
+    /* 2 */{url:'../static/imagens/front/3.png', tag: "Aula 3 - Posicionamento dos elementos da Grid"}
 ]
 
 let listaDesign=[

@@ -1,6 +1,6 @@
 {% extends 'main.html' %}
 
-{% load staticfiles %}
+{% load static %}
 
 {% block content %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
@@ -8,47 +8,35 @@
     <div class="img_header">
         <div class="cabecalho">
             <div id="conteudo">
-                <img src="{% static 'imagens/julianaw.png'%}" class="img_nome_titulo">
-                <h5><small><small>DESENVOLVEDORA</small></small></br>
-                    FRONT-END</br>
-                    UI/UX DESIGN</h5>
+                <img src="{% static 'imagens/estacao-hack.png'%}" class="img_nome_titulo">
+                <div id="titulo">
+                    <h2>CURSO DE</h2>
+                    <h1>FRONT-END E <br>BACK-END</h1>
+                    <h3>MASTERTECH EM PARCERIA<br>COM O FACEBOOK</h3>
+                </div>
                 </div>
                 <div class="menu_hamburguer">
-                    <span class="traco">.</span>
-                    <span class="traco">.</span>
-                    <span class="traco">.</span>
+                    <span class="traco"></span>
+                    <span class="traco"></span>
+                    <span class="traco"></span>
                 </div>
                 <div class="menu_X">
                     <img src="{% static 'imagens/x.png'%}" class="X">
                 </div>
-                
                 <div class="menu_navegacao">
                     <a href="/" class ="links">home</a>
                     <a href="/sobre" class ="links">sobre mim</a>
                     <a href="https://linkedin.com/in/juwitzke" class ="links">linkedin</a>
-                    <a href="" class ="links">link 4</a>
                 </div>
-                
                 <a href="/cadastro">Cadastre-se você também</a>
             </div>
-            
         </div>
     </header>
     
-    <section class="graduacao">
-        <h6><strong>GRADUAÇÃO</strong></h6>
-        <div class="academico">
-            <img src="{% static 'imagens/usp.png'%}" alt="" id="img_complemento">
-            <div class="cont_acad">
-                <h6 class="subtitulo">Universidade de São Paulo (EACH-USP)</h6></small>
-                <p>Computação - Bacharelado em sistemas de informação</br></p>
-                <p id="entrelinhas">Aprovada em 2º lugar; Entre os 10 melhores alunos dentre os ingressantes de 2017 (8º/127); Sem reprovações.</p>
-            </div>
-        </div>
-        <h6><strong>CURSOS COMPLEMENTARES</strong></h6>
-        <div class="academico">
+    <section class="curso">
+        <div class="cuso-mastertech">
             <img src="{% static 'imagens/Academia.png'%}" alt="" id="img_complemento">
-            <div class="cont_acad">
+            <div class="cont_cuso-mastertech">
                 <h6 class="subtitulo">Academia Mastertech - Projeto em parceria com o facebook</h6>
                 <p>Curso profissionalizante de FRONT-END e BACK-END</br></p>
                 <p id="entrelinhas">HTML, CSS, Git, Github, Lógica de Programação, Javascript, Html e DOM, Back-End, Python, Banco de Dados, MVC e Publicação.</p>
@@ -56,51 +44,49 @@
         </div>
     </section>
     
-    <section class="habilidades">
-        <div class="hab_titulo"><h4>Soluções</h4></div>
-        <div class="solucoes">
+    <section class="conteudo">
+        <div class="conteudo_titulo"><h4>PRINCIPAIS CONTEÚDOS APRENDIDOS</h4></div>
+        <div class="conteudos-aprendidos">
             <div class="itens">
                 <img src="{% static 'imagens/front.svg'%}" alt="" class="icon_item">
-                <h3>DESENVOLVEDORA</br>FRONT END</h3>
-                <p>Desenvolvimento WEB a partir de conhecimentos em HTML, CSS e JavaScript</p>
+                <h5>FRONT-END</h5>
+                <p>Desenvolvimento de interfaces WEB responsivas a partir de HTML e CSS, Manipulação da DOM utilizando JavaScript. </p>
             </div>
             <div class="itens">
                 <img src="{% static 'imagens/ux.svg'%}" alt="" class="icon_item">
-                <h3>UI/UX DESIGN</h3>
-                <p>Manipulação e Criação de imagens a partir de ferramentas de edição (Photoshop)</p>
+                <h5>BACK-END</h5>
+                <p>Framework Django, com a linguagem Python, aprofundando-se em temas como: Banco de Dados, Protocolo HTTP, entre outros. </p>
             </div>
             <div class="itens">
                 <img src="{% static 'imagens/wordp.svg'%}" alt="" class="icon_item">
-                <h3>PROGRAMAÇÃfO</h3>
-                <p>Conhecimento avançado em Java e C, Conhecimentos intermediários em Arduino</p>
+                <h5>HOSPEDAGEM</h5>
+                <p>Utilização nos projetos da plataforma de hospedagem GitHub e do controle de versão Git.</p>
             </div>
         </div>
     </section>
-    <section class="front">
+    <section class="aulas">
         <div class="portfolio">
-            <h2 class="fundo_p">Portfólio FRONT-END</h2>
+            <h3 class="fundo_p">CÓDIGOS DAS AULAS PRÁTICAS</h3>
             <div class="cont_port">
                 <div class="computador">
-                    <img src="{% static 'imagens/front/capa.png'%}" class="img_front">
+                    <img src="{% static 'imagens/front/capa.png'%}" class="img_aulas">
                     <div class="base1">.</div>
                     <div class="base2">.</div>
                 </div>
                 <p class="proximo"> >> </p>
             </div>
-            <p class="texto_portfolio">Passe as fotos para ver o portfolio</p>
+            <p class="texto_aulas">Passe as fotos para ver o portfolio</p>
         </div>
     </section>
-    <section class="uxui">
-        <div class="descri_design">
-            <h2>DESIGN UI/UX</h2>
-            <p>Participação em projetos no setor de criação:</p>
-            <ul>
-                <li>Diretório Acadêmico de Sistemas de Informação (DASI-USP)</li>
-                <li>Entidade de Incentivo ao Esporte Universitário da Escola </br>de Artes, Ciências e Humanidades</li>
-            </ul>
+    <section class="certificacao">
+        <div class="certificacao_descricao">
+            <h5>CERTIFICADO</h5>
+            <p>Durante a coordenação do grupo de pesquisa Lab Das Minas, que tem como objetivo incluir mulheres na ciência e tecnologia (principalmente estudantes de escolas públicas da Zona Leste de SP), foi convidada a participar da Estação Hack juntamente com suas alunas.</p>
+            <p>No espaço de inovação do Facebook, finalizou o curso em conjunto com as demais integrantes do grupo participando do Demoday e apresentando um projeto sobre o Lab.</p>
             <button class="pop_up">Visualizar artes desenvolvidas</button>
         </div>
-        <div class="colecao_design">
+        <div class="certificacao_imagens">
+            <img src="{% static 'imagens/certificados/certificado-1.jpg '%}" class="img_certificados">
             <div class="artes">
                 <img src="{% static 'imagens/design/1.jpg'%}" class="arte">
                 <p class="texto_artes">Passe as fotos para ver o portfolio</p>
