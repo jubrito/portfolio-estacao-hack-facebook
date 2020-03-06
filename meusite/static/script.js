@@ -3,55 +3,58 @@
 BÔNUS: Fazer com que o menu hamburguer ao clicar abre os links e transforma os tracinhos em X, e ao fechar o menu volta ao estado normal com os 3 tracinhos*/
 
 let i = 0;
-let botaoProx = document.querySelector(".proximo");
-let botao = document.querySelector(".pop_up");
-let popup = document.querySelector(".artes");
-let imgFront = document.querySelector(".img_aulas");
-let imgArte = document.querySelector(".arte");
-let descricaoImgFront = document.querySelector(".texto_aulas");
-let descricaoArte = document.querySelector(".texto_arte");
-let corpo = document.querySelector("body");
+
+/* ------------------------- MENU ------------------------- */
 let menuHamburguer = document.querySelector(".menu_hamburguer");
 let menuNav = document.querySelector(".menu_navegacao");
 let traco = document.querySelector(".traco");
 let menuX = document.querySelector(".menu_X");
-
-let listaFront=[
-    /* 0 */{url:'../static/imagens/front/1.png', tag: "Aula 1 - Criando arquivo com HTML, CSS JS"},
-    /* 1 */{url:'../static/imagens/front/2.png', tag: "Aula 2 - Introdução a Grid "},
-    /* 2 */{url:'../static/imagens/front/3.png', tag: "Aula 3 - Posicionamento dos elementos da Grid"}
-]
-
-let listaDesign=[
-    /* 0 */{url:'../static/imagens/design/1.png', tag: "Descrição Arte 1"},
-    /* 1 */{url:'../static/imagens/design/2.png', tag: "Descrição Arte 2"},
-    /* 2 */{url:'../static/imagens/design/3.png', tag: "Descrição Arte 3"}
-]
-
-function frontIterativo(){
-    imgFront.src = listaFront[i].url;
-    descricaoImgFront.innerHTML = listaFront[i].tag;
-    i++;
-    if (i==listaFront.length) i=0;
-}
-
-function designIterativo(){
-    imgArte.src = listaDesign[i].url;
-    descricaoArte.innerHTML = listaDesign[i].tag;
-    i++;
-    if (i==listaDesign.length) i=0;
-    popup.classList.toggle("aparecerPopUp");
-}
-
-botaoProx.onclick = frontIterativo;
-corpo.classList.add("botaoFront");/*adicionar/remover classes existentes no CSS*/
 
 function abrirMenuHamburguer(){
     menuNav.classList.toggle("aparecerMenuNavegacao");
     menuHamburguer.classList.toggle("sumir_menu_hamburguer"); 
     menuX.classList.toggle("aparecer_menu_x");   
 }
-
-botao.onclick = designIterativo;
 menuHamburguer.onclick = abrirMenuHamburguer;
 menuX.onclick = abrirMenuHamburguer;
+
+/* ------------------------- AULAS ------------------------- */
+let botaoProx = document.querySelector(".img_mouse");
+let descricaoImgFront = document.querySelector(".texto_aulas");
+let listaAulas=[
+    /* 0 */{url:'../static/imagens/aulas/1.png', tag: "Aula 1 - Criando arquivo com HTML, CSS JS"},
+    /* 1 */{url:'../static/imagens/aulas/2.png', tag: "Aula 2 - Introdução a Grid "},
+    /* 2 */{url:'../static/imagens/aulas/3.png', tag: "Aula 3 - Posicionamento dos elementos da Grid"}
+]
+let imgFront = document.querySelector(".img_aulas");
+
+function aulasIterativo(){
+    botaoProx.src = '../static/imagens/mouse-on-click2.png';
+    setTimeout(function(){ botaoProx.src = '../static/imagens/mouse-off-click.png'; }, 250);
+    imgFront.src = listaAulas[i].url;
+    descricaoImgFront.innerHTML = listaAulas[i].tag;
+    i++;
+    if (i==listaAulas.length) i=0;
+}
+
+botaoProx.onclick = aulasIterativo;
+// corpo.classList.add("botaoFront"); /*adicionar/remover classes existentes no CSS*/
+
+/* ------------------------- CERTIFICADOS -------------------------*/
+let botaoProxCertificado = document.querySelector(".proximo-certificado");
+let certificados = document.querySelector(".certificado");
+let imgCertificados = document.querySelector(".img_certificados");
+let corpo = document.querySelector("body");
+
+let listaCertificados=[
+    /* 0 */{url:'../static/imagens/certificados/certificado-2.jpg'},
+    /* 1 */{url:'../static/imagens/certificados/certificado-1.jpg'}
+]
+
+function mostrarCertificados(){
+    imgCertificados.src = listaCertificados[i].url;
+    i++;
+    if (i==listaCertificados.length) i=0;
+}
+
+botaoProxCertificado.onclick = mostrarCertificados;

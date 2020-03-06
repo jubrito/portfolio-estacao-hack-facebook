@@ -19,9 +19,9 @@ body {
     400px /*curso*/
     500px /*conteudo*/
     800px /*aulas*/
-    90vh /*certificacao*/
-    100vh /*lab*/
-    30vh /*footer*/;
+    600px /*certificacao*/
+    500px /*lab*/
+    100px /*footer*/;
     font-size: 18px;
 }
 
@@ -90,7 +90,6 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 90px;
 }
 
 
@@ -228,6 +227,7 @@ header p {
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+    max-width: 1200px;
 }
 
 .cont_cuso-mastertech{
@@ -263,6 +263,8 @@ header p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .conteudo_titulo{
@@ -271,7 +273,7 @@ header p {
 }
 
 .conteudos-aprendidos{
-    padding: 20px 150px;
+    max-width: 1000px;
     background-color: white;
     display:flex;
     justify-content: center;
@@ -320,11 +322,10 @@ header p {
 
 .cont_port{
     display: flex;
-    margin-left: 140px;
+    margin-left: 210px;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    width: 60%;
 }
 
 .computador{
@@ -390,12 +391,13 @@ header p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 600px;
 }
 
 .certificacao_descricao p{
     color: black;
     font-family: 'Roboto', sans-serif;
-    padding: 10px 70px 0px;
+    padding: 10px 60px 0px;
     text-align: center;
 }
 
@@ -404,12 +406,12 @@ header p {
     font-family: 'Roboto', sans-serif;
 }
 
-.pop_up{
+.proximo-certificado{
     background-color: black;
     color: white;
-    width:300px;
+    width: 210px;
     height:50px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .certificacao_imagens{
@@ -418,7 +420,7 @@ header p {
     align-items: center;
     width:50%;
     height:100%;
-    background-color: blue;
+    max-width: 600px;
 }
 
 .lab {
@@ -437,8 +439,7 @@ footer {
     width: 90%;
 }
 
-.artes{
-    width: 500px;
+.certificados{
     transform: translateX(-50vw);
     margin-top: 50px;
 }
@@ -475,9 +476,9 @@ footer {
 /* IMAGENS */
 .img_header{
     height: 650px;
-    background-image: url(imagens/headersky.jpg);
+    background-image: url(imagens/header-small.jpg);
     background-repeat: repeat-x;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 
@@ -497,6 +498,11 @@ footer {
 .img_certificados {
     width: 500px;
     align-items: center;
+}
+
+.img_mouse {
+    width: 210px;
+    margin-top: 0px;
 }
 
 .campo{
