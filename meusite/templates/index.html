@@ -12,7 +12,6 @@
                 <div id="titulo">
                     <h2>CURSO DE</h2>
                     <h1>FRONT-END E <br>BACK-END</h1>
-                    <h3>MASTERTECH EM PARCERIA<br>COM O FACEBOOK</h3>
                 </div>
                 </div>
                 <div class="menu_hamburguer">
@@ -39,9 +38,9 @@
         <div class="cuso-mastertech">
             <img src="{% static 'imagens/Academia.png'%}" alt="" id="img_complemento">
             <div class="cont_cuso-mastertech">
-                <h6 class="subtitulo">Academia Mastertech - Projeto em parceria com o <img src="{% static 'imagens/icon-facebook.png'%}" alt="" class="mini_icon">acebook</h6>
-                <p>Curso profissionalizante de FRONT-END e BACK-END</br></p>
-                <p id="entrelinhas">HTML, CSS, Git, Github, Lógica de Programação, Javascript, Html e DOM, Back-End, Python, Banco de Dados, MVC e Publicação.</p>
+                <h6 class="subtitulo">ACADEMIA <img src="{% static 'imagens/logo-mastertech.png'%}" alt="MasterTech" class="mini_icon"> <br> Projeto em parceria com o <img src="{% static 'imagens/logo-facebook.png'%}" alt="Facebook" class="mini_icon"></h6>
+                <p><strong>Curso profissionalizante de FRONT-END e BACK-END</strong></br></p>
+                <p id="entrelinhas">HTML, CSS, Git, Github, Lógica de Programação, Javascript, DOM, Python, Arquitetura WEB, Protocolo HTTP, Banco de Dados, MVC e Publicação.</p>
             </div>
         </div>
     </section>
@@ -68,17 +67,21 @@
     </section>
     <section class="aulas">
         <div class="portfolio">
-            <h3 class="fundo_p">CÓDIGOS DAS AULAS PRÁTICAS</h3>
+            <div  class="fundo_p">
+                <h3>CÓDIGOS DAS AULAS PRÁTICAS</h3>
+                <p class="texto_aulas">Clique no mouse para visualizar os códigos produzidos nas aulas.</p>
+            </div>
             <div class="cont_port">
                 <div class="computador">
-                    <img src="{% static 'imagens/aulas/capa.png'%}" class="img_aulas">
-                    <div class="base1">.</div>
-                    <div class="base2">.</div>
+                    <a href="#" class="link_github">
+                        <img src="{% static 'imagens/aulas/capa.gif'%}" class="img_aulas">
+                    </a>
+                    <div class="base1"></div>
+                    <div class="base2"></div>
                 </div>
                 <img src="{% static 'imagens/mouse-off-click.png'%}" class="img_mouse">
                 <!-- <p class="proximo"> >> </p> -->
             </div>
-            <p class="texto_aulas">Clique no mouse para visualizar os códigos produzidos nas aulas.</p>
         </div>
     </section>
     <section class="certificacao">
@@ -95,9 +98,6 @@
             </div>
         </div>
     </section>
-    
-    
-    <section class="lab">.</section>
-    <footer>.</footer>
+    <footer></footer>
     
     {% endblock %}
