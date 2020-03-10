@@ -20,25 +20,25 @@
                     <span class="traco"></span>
                 </div>
                 <div class="menu_X">
-                    <img src="{% static 'imagens/x.png'%}" class="X">
+                    <img src="{% static 'imagens/icones/x.png'%}" class="X">
                 </div>
             </div>
             <div class="navegacao">
                 <div class="menu_navegacao">
                     <a href="/" class ="links">home</a>
-                    <a href="/sobre" class ="links">sobre mim</a>
+                    <a href="https://github.com/jubrito" class ="links">github</a>
                     <a href="https://linkedin.com/in/juwitzke" class ="links">linkedin</a>
-                    <a href="/cadastro" class ="links">Cadastre-se</a>
+                    <a href="/cadastro" class ="links">currículo</a>
                 </div>
             </div>
         </div>
     </header>
     
     <section class="curso">
-        <div class="cuso-mastertech">
-            <img src="{% static 'imagens/Academia.png'%}" alt="" id="img_complemento">
-            <div class="cont_cuso-mastertech">
-                <h6 class="subtitulo">ACADEMIA <img src="{% static 'imagens/logo-mastertech.png'%}" alt="MasterTech" class="mini_icon"> <br> Projeto em parceria com o <img src="{% static 'imagens/logo-facebook.png'%}" alt="Facebook" class="mini_icon"></h6>
+        <div class="curso-mastertech">
+            <img src="{% static 'imagens/icones/Academia.png'%}" alt="" id="img_complemento">
+            <div class="cont_curso-mastertech">
+                <h6 class="subtitulo">ESTAÇÃO HACK E ACADEMIA MASTERTECH <br> Projeto em parceria com o <img src="{% static 'imagens/icones/logo-facebook.png'%}" alt="Facebook" class="mini_icon"></h6>
                 <p><strong>Curso profissionalizante de FRONT-END e BACK-END</strong></br></p>
                 <p id="entrelinhas">HTML, CSS, Git, Github, Lógica de Programação, Javascript, DOM, Python, Arquitetura WEB, Protocolo HTTP, Banco de Dados, MVC e Publicação.</p>
             </div>
@@ -49,18 +49,24 @@
         <div class="conteudo_titulo"><h4>PRINCIPAIS CONTEÚDOS APRENDIDOS</h4></div>
         <div class="conteudos-aprendidos">
             <div class="itens">
-                <img src="{% static 'imagens/icon-front.png'%}" alt="" class="icon_item">
-                <h5>FRONT-END</h5>
+                <div class="img-titulo">
+                    <img src="{% static 'imagens/icones/icon-front.png'%}" alt="" class="icon_item">
+                    <h5>FRONT-END</h5>
+                </div>
                 <p>Desenvolvimento de interfaces WEB responsivas a partir de HTML e CSS, Manipulação da DOM utilizando JavaScript. </p>
             </div>
             <div class="itens">
-                <img src="{% static 'imagens/icon-back.png'%}" alt="" class="icon_item">
-                <h5>BACK-END</h5>
+                <div class="img-titulo">
+                    <img src="{% static 'imagens/icones/icon-back.png'%}" alt="" class="icon_item">
+                    <h5>BACK-END</h5>
+                </div>
                 <p>Framework Django, com a linguagem Python, aprofundando-se em temas como: Banco de Dados, Protocolo HTTP, entre outros. </p>
             </div>
             <div class="itens">
-                <img src="{% static 'imagens/icon-git.png'%}" alt="" class="icon_item">
-                <h5>HOSPEDAGEM</h5>
+                <div class="img-titulo">
+                    <img src="{% static 'imagens/icones/icon-git.png'%}" alt="" class="icon_item">
+                    <h5>HOSPEDAGEM</h5>
+                </div>
                 <p>Utilização nos projetos da plataforma de hospedagem GitHub e do controle de versão Git.</p>
             </div>
         </div>
@@ -69,7 +75,8 @@
         <div class="portfolio">
             <div  class="fundo_p">
                 <h3>CÓDIGOS DAS AULAS PRÁTICAS</h3>
-                <p class="texto_aulas">Clique no mouse para visualizar os códigos produzidos nas aulas.</p>
+                <p class="texto_aulas">Clique no mouse para visualizar os códigos produzidos nas aulas. <br><br> Em cada aula, para acessar o código produzido, clique na tela do computador.</p>
+                <p class="descricao_aulas"></p>
             </div>
             <div class="cont_port">
                 <div class="computador">
@@ -79,7 +86,7 @@
                     <div class="base1"></div>
                     <div class="base2"></div>
                 </div>
-                <img src="{% static 'imagens/mouse-off-click.png'%}" class="img_mouse">
+                <img src="{% static 'imagens/icones/mouse-off-click.png'%}" class="img_mouse">
                 <!-- <p class="proximo"> >> </p> -->
             </div>
         </div>
@@ -87,15 +94,13 @@
     <section class="certificacao">
         <div class="certificacao_descricao">
             <h5>CERTIFICADO</h5>
-            <p>Durante a coordenação do grupo de pesquisa Lab Das Minas, que tem como objetivo incluir mulheres na ciência e tecnologia (principalmente estudantes de escolas públicas da Zona Leste de SP), foi convidada a participar da Estação Hack juntamente com suas alunas.</p>
-            <p>No espaço de inovação do Facebook, finalizou o curso em conjunto com as demais integrantes do grupo participando do Demoday e apresentando um projeto sobre o Lab.</p>
+            <p>Foi convidada pela Camila Achutti CEO da Mastertech a ingressar no curso Estação Hack em conjunto com as demais participantes do grupo Lab Das Minas em que atuava como coordenadora, projeto de inclusão de mulheres na ciência e tecnologia.</p>
+            <p>Durante a Estação Hack, "A Mastertech selecionou os melhores projetos, os alunos mais engajados e as pessoas que se destacaram na parte técnica para receberem as próximas bolsas”, segundo a Custommer Success da Mastertech e P.O.</p> 
+            <p>O restante do grupo fez parte dos 10% selecionados para bolsa da Academia Mastertech, curso que foi realizado no espaço de inovação do Facebook.</p>
             <button class="proximo-certificado">Mostrar próximo certificado</button>
         </div>
         <div class="certificacao_imagens">
             <img src="{% static 'imagens/certificados/certificado-1.jpg '%}" class="img_certificados">
-            <div class="certificados">
-                <img src="{% static 'imagens/design/1.jpg'%}" class="arte">
-            </div>
         </div>
     </section>
     <footer></footer>
