@@ -1,22 +1,8 @@
 
-# Curso Estação Hack - FRONT-END + BACK-END (MasterTech em parceria com o Facebook)
+# Estação Hack e Academia Mastertech (Em parceria com o Facebook)
+# FRONT-END + BACK-END
 
-
-## APLICAÇÃO PARA DEMONSTRAÇÃO DE ALGUNS DOS CONCEITOS APRENDIDOS NO CURSO
-
-**Temas abordados no curso**
-
-- HTML;
-- CSS;
-- JavaScript; 
-- Python; 
-- Django; 
-- GIT e Github;
-- Responsividade; 
-- Arquitetura Web;
-- Protocolo HTTP; 
-- Banco de dados.
-- Back-END x Front-END;
+![](\meusite\static\imagens\portfolio.gif?raw=true "Visualização do site final do curso")
 
 
 
@@ -24,8 +10,9 @@
 
 ### 1. Instalar o Python e o PIP*
 
-Instalação Python: [Python](https://www.python.org/downloads)
-Instalação PIP: [PIP](https://pip.pypa.io/en/stable/installing)
+Instalação [Python](https://www.python.org/downloads);
+
+Instalação [PIP](https://pip.pypa.io/en/stable/installing).
 
 
 ### 2. Clonar este repositório 
@@ -33,6 +20,8 @@ Instalação PIP: [PIP](https://pip.pypa.io/en/stable/installing)
 ```sh
 $ git clone  https://github.com/jubrito/Aula-12-PortfolioEstacaoHack.git
 ```
+
+
 
 Na pasta do projeto: 
 
@@ -74,8 +63,24 @@ $ python manage.py runserver 8000
 
 ### 7. Acesar localhost
 
-[local_host](http://localhost:8000)
+http://localhost:8000
 
 
 _*Os passos 1, 2, 3, 5 e 6 são necessários apenas no primeiro acesso_
+
+
+
+## TEMAS ABORDADOS NO CURSO
+
+- HTML;
+- CSS;
+- JavaScript; 
+- Python; 
+- Django; 
+- GIT e Github;
+- Responsividade; 
+- Arquitetura Web;
+- Protocolo HTTP; 
+- Banco de dados.
+- Back-END x Front-END;
 
