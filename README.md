@@ -2,7 +2,7 @@
 # Estação Hack e Academia Mastertech (Em parceria com o Facebook)
 # FRONT-END + BACK-END
 
-![](meusite\static\imagens\portfolio.gif?raw=true "Visualização do site final do curso")
+![](portfolio.gif?raw=true "Visualização do site final do curso")
 
 
 
